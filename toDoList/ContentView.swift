@@ -16,23 +16,17 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView {
-            List(todos) { todo in
-                HStack {
-                    Image(systemName: todo.isCompleted ? "checkmark.square" : "squareshape")
-                        .font(.system(size: 12))
-                        .foregroundColor(todo.isCompleted ? .gray : .black)
-                    Text(todo.title)
-                        .strikethrough(todo.isCompleted)
-                        .foregroundColor(todo.isCompleted ? .gray : .black)
+            ZStack {
+                List{
+                    Section(header: Text("To Complete")) {
+                        TodosView(todos: $todos)
+                    }
+                    Section(header: Text("Completed")) {
+                        TodosView(todos: $todos, done: true)
+                    }
                 }
-                .onTapGesture {
-                    let todoIndex = todos.firstIndex{
-                        $0.id == todo.id
-                    }!
-                    todos[todoIndex].isCompleted.toggle()
-                }
+                .navigationTitle("To-Dos")
             }
-            .navigationTitle("To-Dos")
         }
     }
 }
