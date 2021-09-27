@@ -13,6 +13,7 @@
 		A65EBEAA26EF4CB600583A68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65EBEA926EF4CB600583A68 /* Assets.xcassets */; };
 		A65EBEAD26EF4CB600583A68 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65EBEAC26EF4CB600583A68 /* Preview Assets.xcassets */; };
 		A65EBEB526EF4DA300583A68 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65EBEB426EF4DA300583A68 /* ToDo.swift */; };
+		A6A0DDB42701C69700478E3A /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A0DDB32701C69700478E3A /* NewToDoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A65EBEAC26EF4CB600583A68 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A65EBEAE26EF4CB600583A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65EBEB426EF4DA300583A68 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		A6A0DDB32701C69700478E3A /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				A65EBEB426EF4DA300583A68 /* ToDo.swift */,
 				A65EBEA526EF4CAF00583A68 /* toDoListApp.swift */,
 				A65EBEA726EF4CAF00583A68 /* ContentView.swift */,
+				A6A0DDB32701C69700478E3A /* NewToDoView.swift */,
 				A61DBE8B26F88DA500B3BFBF /* TodosView.swift */,
 				A65EBEA926EF4CB600583A68 /* Assets.xcassets */,
 				A65EBEAE26EF4CB600583A68 /* Info.plist */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6A0DDB42701C69700478E3A /* NewToDoView.swift in Sources */,
 				A65EBEB526EF4DA300583A68 /* ToDo.swift in Sources */,
 				A65EBEA826EF4CAF00583A68 /* ContentView.swift in Sources */,
 				A61DBE8C26F88DA500B3BFBF /* TodosView.swift in Sources */,

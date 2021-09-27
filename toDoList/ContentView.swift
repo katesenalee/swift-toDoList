@@ -13,6 +13,7 @@ struct ContentView: View {
         ToDo(title: "english essay"),
         ToDo(title: "chem video")
     ]
+    @State var showSheet = false
     
     var body: some View {
         NavigationView {
@@ -30,7 +31,19 @@ struct ContentView: View {
                     }
                 }
                 .navigationTitle("To-Dos")
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        Button {
+                            showSheet = true
+                        } label: {
+                            Image(systemName: "square.and.pencil")
+                        }
+                    }
+                }
             }
+        }
+        .sheet(isPresented: $showSheet) {
+            NewToDoView(todos: $todos)
         }
     }
 }
