@@ -18,12 +18,12 @@ struct ContentView: View {
         NavigationView {
             ZStack {
                 List{
-                    if (todos.filter{$0.isCompleted == false}.count > 1) {
+                    if (todos.filter{$0.isCompleted == false}.count > 0) {
                         Section(header: Text("To Complete")) {
                             TodosView(todos: $todos)
                         }
                     }
-                    if (todos.filter{$0.isCompleted == true}.count > 1) {
+                    if (todos.filter{$0.isCompleted == true}.count > 0) {
                         Section(header: Text("Completed")) {
                             TodosView(todos: $todos, done: true)
                         }
